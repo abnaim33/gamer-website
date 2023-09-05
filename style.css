@@ -8,6 +8,9 @@
     /* margin: 0 auto; */
 }
 
+button {
+    cursor: pointer;
+}
 
 /* navbar section */
 a {
@@ -59,15 +62,11 @@ a {
     border-radius: .3rem;
 }
 
-/* .navbar i {
-    width: 1.4rem;
-    height: 1.3rem;
-} */
-/* home */
+
 .home {
     max-width: 1280px;
     margin: 0 auto;
-    /* background: #000; */
+
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -82,18 +81,18 @@ a {
     background-position: left;
     background-size: contain;
     width: 45vw;
-    /* background: #000; */
+
     display: flex;
     flex-direction: column;
     align-items: left;
     padding-left: 1rem;
     height: 100vh;
-    /* height: 100vh; */
+
 }
 
 .home-right {
     width: 45vw;
-    /* background: #3bbaf5; */
+
 }
 
 .home-right img {
@@ -139,7 +138,7 @@ a {
 
 .home button:nth-child(2) {
     background: #3bbaf5;
-    /* margin-left: 2rem; */
+
 }
 
 
@@ -444,6 +443,9 @@ footer small {
     color: darkgray;
 }
 
+
+/* mobile  */
+
 @media only screen and (max-width: 600px) {
 
 
@@ -470,10 +472,7 @@ footer small {
         width: 80%;
     }
 
-    /* .home .home-right {
-        width: 300px !important;
-        background: #000;
-    } */
+
     .home .home-left {
         width: 90%;
         height: 100vh;
@@ -485,7 +484,7 @@ footer small {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        /* background: #000; */
+
         text-align: center;
     }
 
@@ -574,4 +573,104 @@ footer small {
 
 
 
+}
+
+/* laptop */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        max-width: 90vw;
+
+    }
+
+    /* home part */
+    .home {
+        max-width: 90vh;
+        flex-direction: column;
+    }
+
+    .home-left {
+        /* width: 50vh;
+         */
+        width: 90vw;
+        text-align: center;
+
+    }
+
+    .home-text {
+        width: 100% !important;
+
+    }
+
+    .home-right {
+        width: 90vw;
+    }
+
+    /* .we-are-gamer */
+
+    .we-are-gamer {
+        flex-direction: column-reverse;
+        max-width: 90vw;
+        padding-top: 3rem;
+    }
+
+    .we-are-gamer div {
+        width: 100% !important;
+
+    }
+
+    .we-are-gamer div:nth-child(2) {
+        text-align: center;
+    }
+
+    .we-are-gamer h1 {
+        font-size: 3rem;
+    }
+
+    .we-are-gamer div img {
+        width: 100%;
+    }
+
+    /* online games part */
+
+    .online-games {
+        width: 90vw;
+        height: auto;
+    }
+
+    .watch-cards {
+        flex-wrap: wrap;
+    }
+
+    .watch-card {
+        width: 300px;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    /* play instantly */
+    .play-instantly {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    .play-instantly-left div {
+        width: 100% !important;
+        text-align: center;
+        /* background: #000; */
+    }
+
+    .play-instantly-left div h1 {
+        font-size: 2.5rem;
+    }
+
+    .play-instantly-right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .play-instantly-right img {
+        left: 1.5rem
+    }
 }
