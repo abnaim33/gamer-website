@@ -279,7 +279,8 @@ a {
 }
 
 .watch-info h2 {
-    color: #f2358a
+    color: #f2358a;
+    font-size: 1rem;
 }
 
 .watch-card h4 {
